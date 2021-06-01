@@ -18,7 +18,7 @@ return(
     bottom : 10,
     backgroundColor : '#F8F8FF',
     borderRadius : 15,
-    height : 70,
+    height : 60,
   },
 }} >
         <Tab.Screen name="Home" component={Home} 

@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import {Text , StyleSheet, TouchableOpacity , TextInput , Image , ImageBackground, View, ScrollView} from 'react-native'
+import {Text , StyleSheet, TouchableOpacity , TextInput , Image , ImageBackground, View, ScrollView, Platform, Modal, FlatList } from 'react-native'
+import {Picker} from '@react-native-picker/picker';
 import imagePath from '../constants/imagePath';
-import UserPostApi from '../api/userApi'
+import UserPostApi from '../api/userApi';
+import { apiGet, apiPost } from '../utils/utils';
+import { REGISTER_USER } from '../config/urls';
+import { Header } from 'react-native/Libraries/NewAppScreen';
+import SignUpData, { Weight } from '../components/SignUpData';
 class SignUp extends Component{
 constructor(){
     super()
-    this.state = {
+    this.state ={ 
         firstName : '',
         lastName : '',
         email : '',
@@ -13,20 +18,52 @@ constructor(){
         gender : '',
         weight : '',
         height : '',
-        country : ''
-
-    }
+        country : '',
+        "timeZone" : "Asia/Kolkata",
+        "deviceType" : Platform.OS.toUpperCase()
+        }
+        this.state ={
+            arrData : ['', ''] ,
+            visible :  false
+        }
+    
 }
 
 moveSignIn =()=>{
  this.props.navigation.navigate('Login')
 }
 
+onClickList =()=>{
+    this.setState({visible: false})
+}
+
+registerUser =() =>{
+apiPost(REGISTER_USER, this.state ,
+    {"accept-language" : "en"
+    } )
+.then(function (response) {
+    console.log(response);
+     alert('data sended')
+     
+      })
+    .catch(function (error) {
+      console.log(error);
+        alert('error')
+      });
+
+
+}
+
+
+onShow =(value)=>[
+    alert(value)
+]
 
 
 
 onSignUp =()=>{
-   console.log(this.state.firstName , this.state.lastName)
+this.registerUser()
+this.props.navigation.navigate('Login')
 }
 
 render(){
@@ -78,7 +115,7 @@ return(
 <Image source = {imagePath.lock} style ={{height : 20 , width : 20}} />
 </View>
 <View style ={{flex :5, justifyContent : 'center'}}>
-    <TextInput placeholder = 'Password' />
+    <TextInput onChangeText ={(text)=>this.setState({password : text})} placeholder = 'Password' />
     </View>
 </View>
 
@@ -111,7 +148,7 @@ return(
 <Image source = {imagePath.height} style ={{height : 15 , width : 15}} />
 </View>
 <View style ={{flex :4, justifyContent : 'center'}}>
-    <TextInput onChangeText={(text)=>this.setState({height : text})} placeholder = 'Height' />
+    <TextInput  onChangeText={(text)=>this.setState({height : text , visible : true})} placeholder = 'Height' />
     </View>
     <View style ={styles.imageView}>
         <Image source = {imagePath.shape} style ={{height : 15 , width : 15}} />
@@ -150,8 +187,30 @@ return(
     <Text style = {{textAlign : 'center' , fontSize : 15 , fontWeight : 'bold' , color : 'gray'}}>Already have an account? Sign In Now</Text>
     </TouchableOpacity>
 </View>
+{/* <View>
+    <Picker onValueChange = {this.onShow.bind()}>
+
+        <Picker.Item label ="Male" value ="0" > </Picker.Item>
+        <Picker.Item label ="Female" value ="1" > </Picker.Item>
+        <Picker.Item label ="Other" value ="2" > </Picker.Item>
+    </Picker>
+</View> */}
+<View>
+<Modal visible ={this.state.visible}>
+<FlatList
+data = {this.state.arrData} 
+renderItem ={(item , index) =>(
+<SignUpData
+onClickList = {this.onClickList} />
+)
+}
+/>
+</Modal>
+</View>
+
 </ScrollView>
 )
+
 }
 
 }

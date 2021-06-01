@@ -23,7 +23,7 @@ render(){
 <ScrollView style = {{flex :1}}>
 <View style ={{flex :1  , backgroundColor : 'purple' , flexDirection : 'row' , height : 90 }}>
 <View style ={{flex :1, justifyContent : 'center' , marginTop : 40 }}>
-    <Text style ={[commonStyles.fontSize24,{color : 'white' , textAlign : 'center'}]}>Pranic Me</Text>
+    <Text style ={[commonStyles.fontSize24,{color : 'white' , textAlign : 'center' }]}>Pranic Me</Text>
 </View>
 <View style ={{flex :0.3, justifyContent : 'center' , alignItems : 'center', marginTop : 40}}>
 <ImageBackground source ={imagePath.lotus} style ={{height : 30 , width : 40 , justifyContent : 'center'}}>

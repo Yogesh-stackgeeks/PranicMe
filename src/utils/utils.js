@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-community/async-storage';
 import { PermissionsAndroid, Platform } from "react-native";
-import { showError } from './helperFunctions';
+//import { showError } from './helperFunctions';
 // import firebase from 'react-native-firebase';
 import Geolocation from 'react-native-geolocation-service';
 

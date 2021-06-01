@@ -70,7 +70,7 @@ export default StyleSheet.create({
   fontSize24: {
     fontSize: textScale(24),
     color: colors.black,
-    fontFamily: fontFamily.regular,
+    //fontFamily: fontFamily.regular,
   },
   fontBold16: {
     fontSize: textScale(16),
