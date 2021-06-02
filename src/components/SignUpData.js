@@ -2,11 +2,13 @@ import React from 'react';
 import { Component } from 'react';
 import {View , Text ,TouchableOpacity , StyleSheet , Image} from 'react-native';
 import { baseProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlers';
-
+import commonStyles from '../styles/commonStyles';
  
 
 const SignUpData = (props) =>{
-
+     console.log(props , "proprties")
+const item = props.item
+const index = props.index
  const onClickList = props.onClickList
 
 const onclick =()=>{
@@ -14,13 +16,14 @@ const onclick =()=>{
 }
 
 return(
-          <View style ={{flex :1 , justifyContent : 'center' }}>
-               <View style ={{flex :1 , justifyContent : 'center' , marginTop : 100}}>
+          <View > 
+               <View style ={{flex : 1 , justifyContent : 'center' , margin : 10}}>
                <TouchableOpacity onPress ={onclick} >
-                    <Text style ={{textAlign : 'center'}}>Hello this is modal</Text>
+                    <Text style ={{fontWeight : 'bold' , fontSize : 20 , textAlign : 'center'}}>{index.item.gender}</Text>
                     </TouchableOpacity>
                </View>
           </View>
+         
 
 
 
@@ -29,8 +32,6 @@ return(
 
 export default SignUpData;
     
-
-
 
 
 

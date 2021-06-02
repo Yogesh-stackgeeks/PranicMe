@@ -16,6 +16,10 @@ constructor(){
 }
 
 
+apiLogin =()=>{
+
+}
+
 moveSignUp =()=>{
     this.props.navigation.navigate('SignUp' )
 }

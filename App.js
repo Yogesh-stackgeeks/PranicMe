@@ -10,7 +10,7 @@ import TabBar from './src/navigation/TabBar';
 
 export default function App(){
 return(
-  <SignUp />
+  <Routes />
   // < NavigationContainer>
   // <TabBar />
   // </NavigationContainer>
