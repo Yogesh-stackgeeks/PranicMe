@@ -24,5 +24,6 @@ export default {
     experience : require('../assests/images/bottomIcons/experience.png'),
     parameters : require('../assests/images/bottomIcons/parameters.png'),
     daily : require('../assests/images/bottomIcons/daily.png'),
+    back : require('../assests/images/back/back.png')
 
 }

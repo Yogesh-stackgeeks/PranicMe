@@ -83,11 +83,11 @@ export function apiDelete(endPoint, data, headers = {}) {
 	return apiReq(endPoint, data, 'delete', headers);
 }
 
-export function apiGet(endPoint, data, headers = {}, requestOptions) {
+export function apiGet(endPoint, data, headers =  {"accept-language": "en"} , requestOptions) {
 	return apiReq(endPoint, data, 'get', headers, requestOptions);
 }
 
-export function apiPut(endPoint, data, headers = {}) {
+export function apiPut(endPoint, data, headers = {"accept-language": "en" }) {
 	return apiReq(endPoint, data, 'put', headers);
 }
 
