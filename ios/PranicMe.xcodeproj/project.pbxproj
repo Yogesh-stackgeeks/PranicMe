@@ -11,6 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1890CBA7266A51C700B0645B /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AE6AE8266A4EE50027D9C1 /* SFProText-Bold.ttf */; };
+		1890CBAA266A51C900B0645B /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AE6AE7266A4EE50027D9C1 /* SFProText-Medium.ttf */; };
+		1890CBAB266A51CD00B0645B /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AE6AE9266A4EE50027D9C1 /* SFProText-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B1756A2C172FA67292BFC5A9 /* libPods-PranicMe-PranicMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB0B34E20242F97239AF983 /* libPods-PranicMe-PranicMeTests.a */; };
 		B39FCF9981A460B8ABF9088B /* libPods-PranicMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED8CC83FB8B10A67EF6CBD2 /* libPods-PranicMe.a */; };
@@ -37,6 +40,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PranicMe/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PranicMe/main.m; sourceTree = "<group>"; };
 		14342E196B8E674920BF0CBC /* Pods-PranicMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PranicMe.release.xcconfig"; path = "Target Support Files/Pods-PranicMe/Pods-PranicMe.release.xcconfig"; sourceTree = "<group>"; };
+		18AE6AE7266A4EE50027D9C1 /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Medium.ttf"; path = "../../../SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		18AE6AE8266A4EE50027D9C1 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Bold.ttf"; path = "../../../SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		18AE6AE9266A4EE50027D9C1 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProText-Regular.ttf"; path = "../../../SFProText-Regular.ttf"; sourceTree = "<group>"; };
 		6DB0B34E20242F97239AF983 /* libPods-PranicMe-PranicMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PranicMe-PranicMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E835AAB4E0DFA59E060A44D /* Pods-PranicMe-PranicMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PranicMe-PranicMeTests.release.xcconfig"; path = "Target Support Files/Pods-PranicMe-PranicMeTests/Pods-PranicMe-PranicMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PranicMe/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,7 +97,6 @@
 				B3865E4DE56E586E69DBEDF2 /* Pods-PranicMe-PranicMeTests.debug.xcconfig */,
 				7E835AAB4E0DFA59E060A44D /* Pods-PranicMe-PranicMeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +133,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				18AE6AE8266A4EE50027D9C1 /* SFProText-Bold.ttf */,
+				18AE6AE7266A4EE50027D9C1 /* SFProText-Medium.ttf */,
+				18AE6AE9266A4EE50027D9C1 /* SFProText-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* PranicMe */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PranicMeTests */,
@@ -244,6 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				1890CBAA266A51C900B0645B /* SFProText-Medium.ttf in Resources */,
+				1890CBA7266A51C700B0645B /* SFProText-Bold.ttf in Resources */,
+				1890CBAB266A51CD00B0645B /* SFProText-Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -73,7 +73,7 @@ export async function apiReq(endPoint, data, method, headers, requestOptions = {
 	});
 }
 
-export function apiPost(endPoint, data, headers = {}) {
+export function apiPost(endPoint, data, headers = {"accept-language": "en"}) {
 	// console.log("headers from utils", headers)
 	// console.log("headers from utils", data)
 	return apiReq(endPoint, data, 'post', headers);

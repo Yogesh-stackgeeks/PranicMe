@@ -1,8 +1,6 @@
 import React from 'react';
-import {View , Text ,TouchableOpacity , StyleSheet , Image} from 'react-native';
-import { color } from 'react-native-reanimated';
+import {View , Text ,TouchableOpacity , Image} from 'react-native';
 import imagePath from '../constants/imagePath';
-import commonStyles from '../styles/commonStyles';
 
 const FlatDataHome = (props)=>{
     const item = props.items

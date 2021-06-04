@@ -1,30 +1,24 @@
 import React from 'react';
-import { Component } from 'react';
-import {View , Text ,TouchableOpacity , StyleSheet , Image} from 'react-native';
-import commonStyles from '../styles/commonStyles';
+import {View , Text ,TouchableOpacity} from 'react-native';
  
 
 const SignUpData = (props) =>{
 const item = props.item
 const index = props.index
- const onClickGender = props.onClickGender
+ const onPress = props.onPress
 
- 
-const onclick =(index)=>{
-    onClickGender(index)  
+
+const onClick =(index)=>{
+    onPress(index)  
 }
 return(
-          <View > 
-               <View style ={{flex : 1 , justifyContent : 'center' , margin : 15}}>
-               <TouchableOpacity onPress ={()=>onclick(index)} >
+          <View  > 
+               <View style ={{flex : 1 , justifyContent : 'center' , margin : 35}}>
+               <TouchableOpacity onPress ={()=>onClick(index)} >
                     <Text style ={{fontWeight : 'bold' , fontSize : 20 , textAlign : 'center'}}>{index.item.name}</Text>
                     </TouchableOpacity>
                </View>
           </View>
-         
-
-
-
      )
 }
 

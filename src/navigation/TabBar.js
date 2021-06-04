@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, FlatList, TouchableOpacity, ScrollView, ImageEditor } from 'react-native';
+import { Text, View, Image} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import imagePath from '../constants/imagePath';
 import Home from '../screens/Home';

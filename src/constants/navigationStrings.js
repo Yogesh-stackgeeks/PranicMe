@@ -1,5 +1,7 @@
 export default {
     Login : "Login",
     SignUp : "SignUp",
-    Home : "Home"
+    Home : "Home",
+    Breath : "Breath",
+
 }

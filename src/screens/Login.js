@@ -1,12 +1,11 @@
-
 import React, { Component } from 'react';
-import {Text , StyleSheet, TouchableOpacity , TextInput , Image , ImageBackground, View, ScrollView} from 'react-native'
-import  { REGISTER_USER } from '../config/urls';
+import {Text , StyleSheet, TouchableOpacity , TextInput , Image , View, ScrollView} from 'react-native';
+import FlashMessage from 'react-native-flash-message';
 import imagePath from '../constants/imagePath';
 import WrapperContainer from '../constants/WrapperContainer';
 import colors from '../styles/colors';
 import commonStyles from '../styles/commonStyles';
-import validations from '../utils/validations';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 
 class Login extends Component{
@@ -29,7 +28,7 @@ moveSignUp =()=>{
 render(){
     return(
         <WrapperContainer>
-<ScrollView style ={{flex :1}}>
+<KeyboardAwareScrollView style ={{flex :1}}>
 <View style ={{ alignItems : 'center'}}>
     <Image source ={imagePath.logo}   style ={{height : 130 , width :150}}  />
 </View>
@@ -90,11 +89,8 @@ render(){
     </TouchableOpacity>
 
 
-</ScrollView>
+</KeyboardAwareScrollView>
 </WrapperContainer>
-
-
-
     )
 }
 }

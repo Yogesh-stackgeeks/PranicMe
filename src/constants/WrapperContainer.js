@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, SafeAreaView, StatusBar} from 'react-native';
+import {View, StatusBar} from 'react-native';
 import Loader from '../components/Loader';
 import colors from '../styles/colors';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';

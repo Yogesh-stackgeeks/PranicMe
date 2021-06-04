@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text} from 'react-native'
 import Routes from './src/navigation/Routes';
 import Home from './src/screens/Home';
 import {SafeAreaView} from 'react-native';
@@ -16,15 +17,14 @@ import Breath from './src/screens/Breath';
 export default function App(){
 return(
 <SafeAreaProvider>
-  <SignUp />
+  < Routes />
     <FlashMessage
           titleStyle={{
             marginRight: moderateScale(5),
             fontFamily: fontFamily.medium,
             fontSize: textScale(16)
           }}
-          position="top"
-        />
+          position="top" />
   {/* <NavigationContainer>
   <TabBar />
   </NavigationContainer> */}

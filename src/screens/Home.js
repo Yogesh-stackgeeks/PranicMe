@@ -1,11 +1,8 @@
-import { NavigationContainer } from '@react-navigation/native';
 import React, { Component } from 'react';
-import {Text , StyleSheet, TouchableOpacity , TextInput,FlatList , Image , ImageBackground, View, ScrollView, SafeAreaView} from 'react-native'
-import { color } from 'react-native-reanimated';
+import {Text ,FlatList ,ImageBackground, View, ScrollView} from 'react-native'
 import FlatDataHome from '../components/FlatDataHome';
 import imagePath from '../constants/imagePath';
 import WrapperContainer from '../constants/WrapperContainer';
-import TabBar from '../navigation/TabBar';
 import commonStyles from '../styles/commonStyles';
 
 
@@ -63,16 +60,8 @@ render(){
 </WrapperContainer>
 
     )
-    
-
-    
 
 }
-
-
-
-
-
 
 }
 export default Home;

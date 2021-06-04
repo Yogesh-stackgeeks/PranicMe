@@ -1,11 +1,9 @@
 import React from 'react';
-import {Text , View , TouchableOpacity , StyleSheet, Image } from 'react-native'
+import {Text , View , TouchableOpacity , Image } from 'react-native'
 import imagePath from '../constants/imagePath';
 
 
 const BreathData = (props)=>{
-
-
 return(
 <TouchableOpacity activeOpacity ={0.9} style ={{flex : 1 , flexDirection : 'row', marginTop : 30 ,  marginHorizontal : 20 , borderRadius: 20 , borderBottomWidth : 0.5 , borderLeftWidth : 0.5 , borderRightWidth : 0.5 , borderColor : 'lightgray'}}>
 <View style ={{flex : 2}}>

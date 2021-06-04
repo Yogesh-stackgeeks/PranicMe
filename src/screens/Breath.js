@@ -1,6 +1,5 @@
-import { NavigationContainer } from '@react-navigation/native';
 import React, { Component } from 'react';
-import {Text , StyleSheet, TouchableOpacity , TextInput,FlatList , Image , ImageBackground, View, ScrollView, SafeAreaView} from 'react-native';
+import {Text ,TouchableOpacity ,FlatList , Image , ImageBackground, View, ScrollView} from 'react-native';
 import BreathData from '../components/BreathData';
 import imagePath from '../constants/imagePath';
 import WrapperContainer from '../constants/WrapperContainer';
